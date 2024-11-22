@@ -1,9 +1,11 @@
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String userAnsver = "";
         do {
+
             System.out.println("task number 1");
             System.out.println("Укажите свою операционную систему");
             String userClientOS = "";
@@ -13,6 +15,7 @@ public class Main {
             } else {
                 System.out.println("Установите приложение для Android по ссылке ...");
             }
+
             System.out.println();
             System.out.println("task number 2");
             System.out.println("Укажите свою операционную систему и год выпуска телефона");
@@ -46,6 +49,7 @@ public class Main {
                 System.out.println("Хотите снова попробовать узнать год? (да / нет)");
                 userAnsver = scan.next();
             } while (userAnsver.equalsIgnoreCase("да"));
+
             System.out.println();
             System.out.println("task number 4");
             System.out.println("Введите расстояние от пункта доставки до Вас (в км)");
@@ -60,6 +64,7 @@ public class Main {
             } else {
                 System.out.println("Доставки на такое расстояние нет. Попробуйте воспользоваться другим сервисом");
             }
+
             System.out.println();
             System.out.println("task number 5");
             System.out.println("Введите номер месяца, чтобы узнать к какому времени года он относится");
